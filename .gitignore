@@ -1,0 +1,16 @@
+.idea
+.DS_Store
+.bash_history
+.cache
+.ssh
+.viminfo
+.gitconfig
+frontend/node_modules
+frontend/psd
+public_html/bitrix
+public_html/desktop_app
+public_html/upload
+public_html/.htaccess
+public_html/robots.txt
+public_html/web.config
+test
