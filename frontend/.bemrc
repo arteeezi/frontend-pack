@@ -1,0 +1,17 @@
+{
+    "root": true,
+    "modules": {
+        "bem-tools": {
+            "plugins": {
+                "create": {
+                    "techs": ["sass"],
+                    "levels": {
+                        "src/sass/style/blocks": {
+                            default: true
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
