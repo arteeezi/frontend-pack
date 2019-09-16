@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.sass","../utils/vars.sass","blocks/menu/menu.sass"],"names":[],"mappings":"AAEA,IAAI,CAAC;EACH,UAAU,ECHJ,MAAM;EDIZ,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,IAAI,GAAG;;AELlB","file":"../style.css","sourcesContent":["@import \"../utils/vars\";\n\nbody {\n  background: $color;\n  color: #021;\n  display: flex; }\n","$color: yellow;\n",""]}

@@ -1,6 +1,6 @@
 "use strict";
 import gulp from "gulp";
-
+import path from 'path';
 const requireDir = require("require-dir");
 let src =  'src',
     dist = '../public_html/assets',
@@ -25,21 +25,30 @@ const paths = {
         dist: `${dist}/img/`,
         watch: `${src}/img/**/*.{jpg,jpeg,png,gif,tiff,svg}`
     },
-    server: server
-
+    server: server,
+    scripts: {
+        src: `${src}/js/index.js`,
+        dist: `${dist}/js/`,
+        watch: `${src}/js/**/*.js`,
+        webpack: {
+            loaders: {
+                include: path.join(__dirname, src)
+            }
+        }
+    },
 };
 
 requireDir('./tasks/');
 
 export { paths };
 export const development = gulp.series("clean",
-    gulp.parallel([ "sass", "images", "fonts"]),
+    gulp.parallel([ "sass", "images", "fonts", "webpack"]),
     "serve");
 
 
 export const prod = gulp.series(
     "clean",
-    gulp.series(["sass","fonts","images"])
+    gulp.series(["sass","fonts","images","webpack"])
 );
 
 export default development;

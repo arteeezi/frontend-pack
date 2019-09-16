@@ -1,5 +1,5 @@
 "browserslist": [
     "iOS 7",
-    "last 2 versions",
+    "last 5 versions",
     "ie >= 9"
   ],
