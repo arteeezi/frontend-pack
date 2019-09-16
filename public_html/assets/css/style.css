@@ -1,6 +1,1 @@
-body {
-  background: yellow;
-  color: #021;
-  display: flex;
-}
-/*# sourceMappingURL=maps/style.css.map */
+body{background:#ff0;color:#021;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}

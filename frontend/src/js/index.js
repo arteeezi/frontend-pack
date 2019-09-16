@@ -1,6 +1,6 @@
 'use strict';
-import swiper from './vendors/swiper';
-
+// import swiper from './vendors/swiper';
+let swiper = require('./vendors/swiper');
 let container = document.querySelector('.swiper-container');
 new swiper('.swiper-container');
 
