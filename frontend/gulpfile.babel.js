@@ -36,19 +36,24 @@ const paths = {
             }
         }
     },
+    vendorCss: {
+        src: `${src}/css/**/*.css`,
+        dist: `${dist}/css/`,
+        watch: `${src}/css/**/*.css`
+    }
 };
 
 requireDir('./tasks/');
 
 export { paths };
 export const development = gulp.series("clean",
-    gulp.parallel([ "sass", "images", "fonts", "webpack"]),
+    gulp.parallel(["vendor-css", "sass", "images", "fonts", "webpack"]),
     "serve");
 
 
 export const prod = gulp.series(
     "clean",
-    gulp.series(["sass","fonts","images","webpack"])
+    gulp.series(["vendor-css","sass","fonts","images","webpack"])
 );
 
 export default development;
