@@ -2,6 +2,7 @@
 
 
 module.exports = {
+	entry: ["@babel/polyfill", "./src/js/index.js"],
     output: {
         filename: "[name].js",
     },

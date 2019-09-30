@@ -1,0 +1,26 @@
+.z-tabs-content.fade{
+    -webkit-animation: fade 2.5s;
+    animation: fade 2.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.z-tabs-content.hide {
+    display: none;
+}
