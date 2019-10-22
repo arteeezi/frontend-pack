@@ -1,8 +1,7 @@
 'use strict';
 
-const hello = () => {
-	let a = "hello";
-	console.log(a);
-}
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./react/App.js";
 
-hello();
+ReactDOM.render(<App />, document.getElementById("root"));

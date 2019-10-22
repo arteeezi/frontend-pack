@@ -1,1 +1,35 @@
-body{background:#ff0;color:#021;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.app__title {
+  text-align: center;
+}
+
+.tasks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tasks__list {
+  width: 70%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.tasks__item {
+  margin: 10px 0;
+  padding: 20px;
+  border: 3px solid #646563;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+
+.tasks__add {
+  width: 30%;
+}
+/*# sourceMappingURL=maps/style.css.map */
