@@ -10,5 +10,7 @@
     "dev": "cd frontend && gulp",
     "build": "cd frontend && gulp prod --production",
     "favicons": "cd frontend && gulp favicons --production"
-  }
+  },
+  "dependencies": {},
+  "devDependencies": {}
 }
