@@ -44,7 +44,7 @@
     "path": "^0.12.7",
     "require-dir": "^1.2.0",
     "webpack": "^4.39.3",
-    "webpack-cli": "^3.3.8",
+    "webpack-cli": "^3.3.12",
     "webpack-stream": "^5.2.1",
     "yargs": "^14.0.0"
   },
